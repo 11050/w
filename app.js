@@ -14,7 +14,7 @@ app.get('/create', (req, res) => {
 })
 
 app.post('/create', (req, res) => {
-     const title =req.body.title
+     const title = req.body.title
      const description =req.body.description
     if (title.trim() === '' && description.trim()  === ''){
         res.render('create', { error: true })
@@ -24,7 +24,7 @@ app.post('/create', (req, res) => {
            const notes = JSON.parse(data)
 
            notes.push({
-               id: id(),
+               id: id (),
                title: title,
                description: description,
                
@@ -68,7 +68,7 @@ app.get('/:id/delete', (req, res) => {
         const filterednotes = notes.filter(note => note.id != id)
         fs.writeFile('./data/notes.json', JSON.stringify(filterednotes), (err) => {
             if (err) throw err
-            res.render('home',{ notes: filterednotes, delete: true })
+            res.render('home',{ notes: filterednotes, deleted: true })
         })
          
 
