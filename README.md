@@ -20,4 +20,4 @@ our libraries
     "pug": "^3.0.2"
 
 our application github
-[            ]
+[     https://github.com/11050/w.git       ]
