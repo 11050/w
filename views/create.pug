@@ -1,0 +1,23 @@
+extends layout.pug 
+block content 
+  div.container
+    h1 Create note 
+
+    if error 
+       p.error Fill the gap
+    if success 
+       p.success Your note succesfully created!
+   
+   if  deleted 
+       p.success deleted
+       
+
+    form.form(action='/create' method='POST')
+      label Name 
+      input.input(type='text'  name='title')
+
+
+      label Description 
+      textarea.input(type='text' name='description')
+
+      button.btn Create note  
