@@ -19,7 +19,7 @@ our libraries
  "express": "^4.17.3",
     "pug": "^3.0.2"
 our host heroku
-[https://appwiut.herokuapp.com/]
+[ https://appwiut.herokuapp.com/]
 our application github
 [     https://github.com/11050/w.git       ]
 
