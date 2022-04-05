@@ -8,5 +8,5 @@ block content
        p.success your note deleted successfully
     each note in notes 
      div.note-wrapper
-       a.note(href=`/notes/${ note.id }`) #{ note.title }
+       a.note(href=`/notes/${ note.id }`) #{ note.title } 
        a.delete(href=`${ note.id}/delete`) delete
